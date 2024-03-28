@@ -1,0 +1,225 @@
+.headerContainer {
+  background-color: #707070;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #fff;
+}
+
+.creativeLogo {
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 1.5rem;
+}
+
+.menuLine {
+  height: 0.2rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logoTxt {
+  text-decoration: dotted;
+  color: #fff;
+}
+
+.routesDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 71%;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #fff;
+}
+
+.linkDiv {
+  gap: 30px;
+  display: flex;
+}
+
+.socialDiv {
+  display: flex;
+  gap: 20px;
+}
+
+.search {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+}
+
+.help {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0d1d;
+  padding: 80px 100px 10px 100px;
+  color: #fff;
+  gap: 100px;
+}
+
+.upperFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topSection {
+  margin-bottom: 50px;
+}
+
+.topTxt {
+  font-weight: 800;
+}
+
+.welcomeTxt {
+  margin-bottom: 50px;
+}
+
+.txt {
+  color: #8f8da0;
+}
+
+.leftCol {
+  width: 35%;
+}
+
+.MiddleCol {
+  width: 30%;
+}
+
+.middleCol2 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.rightCol {
+  width: 30%;
+}
+
+.lowerFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formDiv {
+  padding-left: 30px;
+}
+
+label {
+  color: #8f8da0;
+  font-weight: 700;
+}
+
+.formField {
+  position: relative;
+}
+
+.formInput {
+  margin-top: 20px;
+  height: 20px;
+  width: 90%;
+  padding: 10px;
+}
+
+.formBtn {
+  background-color: #3c72fc;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .headerContainer,
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  .creativeLogo,
+  .routesDiv,
+  .search,
+  .help {
+    width: 100%;
+    border-right: none;
+  }
+
+  .routesDiv {
+    padding: 10px 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .menuLine {
+    height: 0.2rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .linkDiv {
+    gap: 10px;
+  }
+
+  .leftCol,
+  .MiddleCol,
+  .rightCol {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .middleCol2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .formDiv {
+    padding: 0;
+  }
+}
